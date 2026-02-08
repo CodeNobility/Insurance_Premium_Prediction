@@ -18,27 +18,30 @@ Both backend and frontend are fully **Dockerized** and ready for cloud deploymen
 
 ## 🧱 Project Architecture
 
+```text
 Insurance_Premium_Prediction/
-│
 ├── backend/
-│ ├── app.py # FastAPI entry point
-│ ├── config/
-│ │ └── city_tier.py # City tier logic
-│ ├── Model/
-│ │ ├── model.pk1 # Trained ML model
-│ │ └── predict.py # Model loading & prediction logic
-│ ├── schema/
-│ │ └── pydantic_model.py # Request validation schemas
-│ ├── Dockerfile # Backend Dockerfile
-│ └── requirements.txt # Backend dependencies
+│   ├── app.py                 # FastAPI entry point
+│   ├── config/
+│   │   └── city_tier.py        # City tier logic
+│   ├── Model/
+│   │   ├── model.pk1           # Trained ML model
+│   │   └── predict.py          # Prediction logic
+│   ├── schema/
+│   │   └── pydantic_model.py   # Request schemas
+│   ├── Dockerfile              # Backend Dockerfile
+│   └── requirements.txt        # Backend dependencies
 │
 ├── frontend/
-│ ├── frontend.py # Streamlit UI
-│ ├── Dockerfile # Frontend Dockerfile
-│ └── requirements.txt # Frontend dependencies
+│   ├── frontend.py             # Streamlit app
+│   ├── Dockerfile              # Frontend Dockerfile
+│   └── requirements.txt        # Frontend dependencies
 │
-├── myenv/ # Local virtual environment (NOT pushed)
-└── README.md
+├── myenv/                       # Local virtual env (NOT pushed)
+├── .gitignore
+├── README.md
+└── LICENSE
+
 
 ---
 
