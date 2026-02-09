@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-API_URL = os.getenv("API_URL", "http://localhost:8000/predict")
+API_URL = os.getenv("BACKEND_URL", "https://insurance-premium-fastapi-q86v.onrender.com/predict")
 
 
 # ---------------- CSS ----------------
